@@ -11,17 +11,17 @@ namespace Breakers_App_Revised
 {
 
 
-    public partial class Login
+    public partial class Register
     {
 
         /// <summary>
-        /// Username control.
+        /// Login control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Username;
+        protected global::System.Web.UI.HtmlControls.HtmlForm Login;
 
         /// <summary>
         /// InputUsername control.
@@ -33,15 +33,6 @@ namespace Breakers_App_Revised
         protected global::System.Web.UI.WebControls.TextBox InputUsername;
 
         /// <summary>
-        /// Label2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
-
-        /// <summary>
         /// InputPassword control.
         /// </summary>
         /// <remarks>
@@ -51,12 +42,30 @@ namespace Breakers_App_Revised
         protected global::System.Web.UI.WebControls.TextBox InputPassword;
 
         /// <summary>
-        /// ButtonSubmit control.
+        /// InputPasswordConfirm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonSubmit;
+        protected global::System.Web.UI.WebControls.TextBox InputPasswordConfirm;
+
+        /// <summary>
+        /// ButtonSubmitReg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonSubmitReg;
+
+        /// <summary>
+        /// lblMsg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMsg;
     }
 }

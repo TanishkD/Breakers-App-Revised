@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Breakers_App_Revised.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="Breakers_App_Revised.Register" %>
 
 <!DOCTYPE html>
 
@@ -25,7 +25,7 @@
 		<div class="col-md-12">
 			<ul class="nav nav-pills">
 				<li class="nav-item">
-					<a class="nav-link " href="Home.aspx">Home</a>
+					<a class="nav-link" href="Home.aspx">Home</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="Player Information.aspx">Player Information</a>
@@ -49,26 +49,25 @@
 		<div class="col-md-6">
 			
 			<h2>
-	            Login<br />
+	            Register<br />
 			</h2>
 			
 			
-	        <asp:Label ID="Username" runat="server" Text="Username"></asp:Label>
+	        Username<br />
+            <asp:TextBox ID="InputUsername" runat="server" OnTextChanged="InputUsername_TextChanged"></asp:TextBox>
             <br />
-            <asp:TextBox ID="InputUsername" runat="server" ></asp:TextBox>
+            Password<br />
+            <asp:TextBox ID="InputPassword" runat="server"></asp:TextBox>
             <br />
-            <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
+            Confirm Password<br />
+            <asp:TextBox ID="InputPasswordConfirm" runat="server"></asp:TextBox>
             <br />
-            <asp:TextBox ID="InputPassword" runat="server" ></asp:TextBox>
-			
-			
-			<br />
             <br />
-			
-			
-			<br />
+			<asp:Button ID="ButtonSubmitReg" runat="server" OnClick="ButtonSubmit_Click" Text="Button" />
             <br />
-			<asp:Button ID="ButtonSubmit" runat="server" OnClick="ButtonSubmit_Click" Text="Button" />
+            <br />
+            <br />
+            <asp:Label ID="lblMsg" runat="server" Text="Passwords do not match" Visible="False"></asp:Label>
             <br />
             <br />
             <br />

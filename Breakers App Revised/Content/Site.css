@@ -1,7 +1,8 @@
 ﻿/* Move down content because we have a fixed navbar that is 50px tall */
 body {
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 20px;
+
 }
 
 /* Wrapping element */
@@ -30,7 +31,64 @@ textarea {
     }
 }
 
-.center-login-form{
 
-    align-content:center;
+
+.sticky-menu-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: -130px;
+    width: 200px;
 }
+
+    .sticky-menu-bar a {
+        display: block;
+        text-align: center;
+        padding: 12px;
+        transition: all 0.2s ease;
+        color: white;
+        font-size: 18px;
+        transform: rotate(-90deg);
+    }
+
+        .sticky-menu-bar a:hover {
+            background-color: #000;
+        }
+
+.Tickets {
+    background: #3B5998;
+    height: 135px;
+    color: white;
+}
+
+
+.container-fluid{  
+    max-width: 1900px;
+   
+}
+
+#entire-page{
+    width:100%; 
+    margin: 0 auto;
+}
+
+#slideshow-images{
+
+    width:98%;
+    margin: 0 auto;
+
+}
+
+.training{
+
+    text-align:center;
+}
+
+.title-text{
+    text-align:center;
+    font-weight:bold;
+    
+}
+

@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# CS0041: Unexpected error writing debug information -- 'The cloud operation was unsuccessful.
+dotnet_diagnostic.CS0041.severity = silent
