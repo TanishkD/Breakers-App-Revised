@@ -20,23 +20,40 @@ namespace Breakers_App_Revised
 
         protected void ButtonSubmit_Click(object sender, EventArgs e)
         {
-            if (InputPassword.Text != InputPasswordConfirm.Text)
-                lblMsg.Visible = true;
+
+            if (InputUsername.Text == "" || InputPassword.Text == "")
+            {
+                lblMsg.Text = "Please enter text";
+
+
+
+            }
+
+
+
+            else if (InputPassword.Text != InputPasswordConfirm.Text)
+            {
+                lblMsg.Text = "Passwords do not match";
+            }
+
+
+
             else
             {
 
+
+
+
                 using (SqlConnection sqlCon = new SqlConnection(ConnectionString))
                 {
-
                     sqlCon.Open();
-                    SqlCommand sqlCmd = new SqlCommand("UserAdd", sqlCon); 
+                    SqlCommand sqlCmd = new SqlCommand("UserAdd", sqlCon);
                     sqlCmd.CommandType = CommandType.StoredProcedure;
                     sqlCmd.Parameters.AddWithValue("@Username", InputUsername.Text.Trim());
                     sqlCmd.Parameters.AddWithValue("@Password", InputPassword.Text.Trim());
                     sqlCmd.ExecuteNonQuery();
-                    Response.Redirect("~/Home.aspx");
+                    lblMsg.Text = "Youre in";
                     Clear();
-
 
 
 

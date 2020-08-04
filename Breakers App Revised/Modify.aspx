@@ -85,7 +85,7 @@
                     </td>
                     <td colspan="2">
                         <asp:Button ID="BtnSave" runat="server" Text="Save" OnClick="BtnSave_Click" />
-                        <asp:Button ID="BtnDelete" runat="server" Text="Delete" />
+                        <asp:Button ID="BtnDelete" runat="server" Text="Delete" OnClick="BtnDelete_Click" />
                         <asp:Button ID="BtnClear" runat="server" Text="Clear" OnClick="btnclear_Click1" />
                          
                     </td>
@@ -112,14 +112,13 @@
                 </tr>
             </table>
             <br />
-            <asp:GridView ID="gvUser" runat="server" AutoGenerateColumns="false">
+            <asp:GridView ID="gvUser" runat="server" AutoGenerateColumns="false" >
                 <Columns>
                     <asp:BoundField DataField="Username" HeaderText="Username" />
-                    <asp:BoundField DataField="Email" HeaderText="Email" />
                     <asp:BoundField DataField="Password" HeaderText="Password" />
                     <asp:TemplateField>
                         <ItemTemplate>
-                            <asp:LinkButton ID="lnkView" runat="server" CommandArgument='<%# Eval("UserID") %>' >View</asp:LinkButton>
+                            <asp:LinkButton ID="lnkView" runat="server" CommandArgument='<%# Eval("UserID") %>' OnClick="lnk_OnClick">View</asp:LinkButton>
                         </ItemTemplate>
                     </asp:TemplateField>
                 </Columns>

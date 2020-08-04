@@ -19,6 +19,8 @@ namespace Breakers_App_Revised
             {
                 BtnDelete.Enabled = false;
             }
+
+            FillGridView();
         }
 
 
@@ -55,10 +57,19 @@ namespace Breakers_App_Revised
             sqlCmd.Parameters.AddWithValue("Password", InputPassword.Text.Trim());
             sqlCmd.ExecuteNonQuery();
             sqlCon.Close();
+
+            string UserID = hfUserID.Value;
+
             Clear();
-            if (hfUserID.Value == "")
+            if (UserID == "")
                 lblsuccessmessage.Text = "Saved Successfully";
+            else
+                lblsuccessmessage.Text = "Updated Successfully";
+            if (hfUserID.Value == "")
+                lblsuccessmessage.Text = "Saved Successfully"; 
             else lblsuccessmessage.Text = "Updated Successfully";
+
+            FillGridView();
 
         }
 
@@ -67,12 +78,47 @@ namespace Breakers_App_Revised
 
             if (sqlCon.State == ConnectionState.Closed)
                 sqlCon.Open();
-            SqlDataAdapter sqlDa = new SqlDataAdapter("UserViewByID", sqlCon);
+            SqlDataAdapter sqlDa = new SqlDataAdapter("UserViewAll", sqlCon);
             sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
             DataTable dtbl = new DataTable();
             sqlDa.Fill(dtbl);
             sqlCon.Close();
-            gvContact.DataSource = dtbl
+            gvUser.DataSource = dtbl;
+            gvUser.DataBind(); 
+
+        }
+
+        protected void lnk_OnClick(object sender, EventArgs e)
+        {
+
+            int UserID = Convert.ToInt32((sender as LinkButton).CommandArgument);
+            if (sqlCon.State == ConnectionState.Closed)
+                sqlCon.Open();
+            SqlDataAdapter sqlDa = new SqlDataAdapter("UserViewByID", sqlCon);
+            sqlDa.SelectCommand.CommandType = CommandType.StoredProcedure;
+            sqlDa.SelectCommand.Parameters.AddWithValue("@UserID", UserID);
+            DataTable dtbl = new DataTable();
+            sqlDa.Fill(dtbl);
+            sqlCon.Close();
+            hfUserID.Value = UserID.ToString();
+            InputUsername.Text = dtbl.Rows[0]["Username"].ToString();
+            InputPassword.Text = dtbl.Rows[0]["Password"].ToString();
+            BtnSave.Text = "Update";
+            BtnDelete.Enabled = true;
+        }
+
+        protected void BtnDelete_Click(object sender, EventArgs e)
+        {
+            if (sqlCon.State == ConnectionState.Closed)
+                sqlCon.Open();
+            SqlCommand sqlCmd = new SqlCommand("UserDeleteByID", sqlCon);
+            sqlCmd.CommandType = CommandType.StoredProcedure;
+            sqlCmd.Parameters.AddWithValue("@UserID", Convert.ToInt32(hfUserID.Value));
+            sqlCmd.ExecuteNonQuery();
+            sqlCon.Close();
+            Clear();
+            FillGridView();
+            lblsuccessmessage.Text = "Deleted Succesfully";
 
         }
     }

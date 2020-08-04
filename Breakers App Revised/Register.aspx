@@ -63,7 +63,7 @@
             <asp:TextBox ID="InputPasswordConfirm" runat="server"></asp:TextBox>
             <br />
             <br />
-			<asp:Button ID="ButtonSubmitReg" runat="server" OnClick="ButtonSubmit_Click" Text="Button" />
+			<asp:Button ID="ButtonSubmitReg" runat="server" OnClick="ButtonSubmit_Click" Text="Submit" Height="35px" />
             <br />
             <br />
             <br />
