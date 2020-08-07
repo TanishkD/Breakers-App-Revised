@@ -67,7 +67,7 @@
             <br />
             <br />
             <br />
-            <asp:Label ID="lblMsg" runat="server" Text="Passwords do not match" Visible="False"></asp:Label>
+            <asp:Label ID="lblMsg" runat="server" Text="" ></asp:Label>
             <br />
             <br />
             <br />

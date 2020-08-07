@@ -53,7 +53,7 @@
 		 <div class="row">
 			<div class="col-md-6">
 			<h2>
-	            Modify User Information<br />
+	            Modify User Information - Administrator<br />
 			</h2>
                  <div>
             <asp:HiddenField ID="hfUserID" runat="server" />

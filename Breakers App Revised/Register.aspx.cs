@@ -45,25 +45,19 @@ namespace Breakers_App_Revised
 
 
                 using (SqlConnection sqlCon = new SqlConnection(ConnectionString))
-                {
+                { 
                     sqlCon.Open();
                     SqlCommand sqlCmd = new SqlCommand("UserAdd", sqlCon);
                     sqlCmd.CommandType = CommandType.StoredProcedure;
                     sqlCmd.Parameters.AddWithValue("@Username", InputUsername.Text.Trim());
                     sqlCmd.Parameters.AddWithValue("@Password", InputPassword.Text.Trim());
                     sqlCmd.ExecuteNonQuery();
-                    lblMsg.Text = "Youre in";
+                    lblMsg.Text = "You're in";
                     Clear();
-
-
-
 
                 }
 
             }
-
-                
-           
 
         }
 

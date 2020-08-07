@@ -47,30 +47,41 @@ namespace Breakers_App_Revised
 
         protected void BtnSave_Click(object sender, EventArgs e)
         {
+            if (InputUsername.Text == "" || InputPassword.Text == "" || InputUsername.Text.Length < 5 || InputPassword.Text.Length < 5)
+            {
+                lblerrormessage.Text = "Failed";
+            }
+       
 
-            if (sqlCon.State == ConnectionState.Closed)
-                sqlCon.Open();
-            SqlCommand sqlCmd = new SqlCommand("UserCreateOrUpdate", sqlCon);
-            sqlCmd.CommandType = CommandType.StoredProcedure;
-            sqlCmd.Parameters.AddWithValue("@UserID", (hfUserID.Value==""?0:Convert.ToInt32(hfUserID.Value)));
-            sqlCmd.Parameters.AddWithValue("Username", InputUsername.Text.Trim());
-            sqlCmd.Parameters.AddWithValue("Password", InputPassword.Text.Trim());
-            sqlCmd.ExecuteNonQuery();
-            sqlCon.Close();
+             else {
 
-            string UserID = hfUserID.Value;
 
-            Clear();
-            if (UserID == "")
-                lblsuccessmessage.Text = "Saved Successfully";
-            else
-                lblsuccessmessage.Text = "Updated Successfully";
-            if (hfUserID.Value == "")
-                lblsuccessmessage.Text = "Saved Successfully"; 
-            else lblsuccessmessage.Text = "Updated Successfully";
+                if (sqlCon.State == ConnectionState.Closed)
+                    sqlCon.Open();
+                SqlCommand sqlCmd = new SqlCommand("UserCreateOrUpdate", sqlCon);
+                sqlCmd.CommandType = CommandType.StoredProcedure;
+                sqlCmd.Parameters.AddWithValue("@UserID", (hfUserID.Value == "" ? 0 : Convert.ToInt32(hfUserID.Value)));
+                sqlCmd.Parameters.AddWithValue("Username", InputUsername.Text.Trim());
+                sqlCmd.Parameters.AddWithValue("Password", InputPassword.Text.Trim());
+                sqlCmd.ExecuteNonQuery();
+                sqlCon.Close();
 
-            FillGridView();
+                string UserID = hfUserID.Value;
 
+                Clear();
+                if (UserID == "")
+                    lblsuccessmessage.Text = "Saved Successfully";
+                else
+                    lblsuccessmessage.Text = "Updated Successfully";
+                if (hfUserID.Value == "")
+                    lblsuccessmessage.Text = "Saved Successfully";
+                else lblsuccessmessage.Text = "Updated Successfully";
+
+
+
+
+                FillGridView();
+            }
         }
 
         void FillGridView()
