@@ -31,7 +31,7 @@
 					<a class="nav-link" href="Player Information.aspx">Player Information</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link disabled" href="#">Contact Us</a>
+					<a class="nav-link " href="Training.aspx">Training</a>
 				</li>
 
 				
@@ -39,7 +39,7 @@
 				<li class="nav-item dropdown ml-md-auto">
 					 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">Accounts</a>
 					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-						 <a class="dropdown-item" href="Login.aspx">Login</a> <a class="dropdown-item" href="Register.aspx">Create Account</a> <a class="dropdown-item" href="Modify.aspx">Modify User Account</a>
+						 <a class="dropdown-item" href="Login.aspx">Login</a> <a class="dropdown-item" href="Register.aspx">Create Account</a> <!-- <a class="dropdown-item" href="Modify.aspx">Modify User Account</a> -->
 						<div class="dropdown-divider">
 						</div> <a class="dropdown-item" href="#">Separated link</a>
 					</div>
@@ -124,7 +124,7 @@
 			<p>
 				bro you boutta get crossed tf up
 			</p>
-			<iframe width="575" height="400" src="https://www.youtube.com/embed/2lFq7T6pmu8?controls=0" frameborder="0" allowfullscreen></iframe>
+			<iframe id="video1" width="575" height="400" src="https://www.youtube.com/embed/2lFq7T6pmu8?controls=0" runat="server" frameborder="0" allowfullscreen></iframe>
 
 		</div>
 		<div class="col-md-4">
@@ -135,7 +135,7 @@
 			<p>
 				bro you boutta get crossed tf up
 			</p>
-			<iframe width="575" height="400" src="https://www.youtube.com/embed/2lFq7T6pmu8?controls=0" frameborder="0" allowfullscreen></iframe>
+			<iframe width="575" height="400" src="https://www.youtube.com/embed/2lFq7T6pmu8?controls=0" runat="server" frameborder="0" allowfullscreen></iframe>
 
 		</div>
 		<div class="col-md-4">
@@ -146,7 +146,7 @@
 			<p>
 				bro you boutta get crossed tf up
 			</p>
-			<iframe width="567" height="400" src="https://www.youtube.com/embed/2lFq7T6pmu8?controls=0" frameborder="0" allowfullscreen></iframe>
+			<iframe width="567" height="400" src="https://www.youtube.com/embed/2lFq7T6pmu8?controls=0" runat="server" frameborder="0" allowfullscreen></iframe>
 
 		</div>
 	</div>

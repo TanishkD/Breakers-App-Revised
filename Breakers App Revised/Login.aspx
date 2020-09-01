@@ -31,7 +31,7 @@
 					<a class="nav-link" href="Player Information.aspx">Player Information</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link disabled" href="#">Contact Us</a>
+					<a class="nav-link " href="Training.aspx">Training</a>
 				</li>
 				<li class="nav-item">
 					<h4>

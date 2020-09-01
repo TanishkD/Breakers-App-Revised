@@ -30,7 +30,7 @@
 					<a class="nav-link" href="Player Information.aspx">Player Information</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link disabled" href="#">Contact Us</a>
+					<a class="nav-link disabled" href="Training.aspx">Training</a>
 				</li>
 				<li class="nav-item dropdown ml-md-auto">
 					 <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">Accounts</a>
