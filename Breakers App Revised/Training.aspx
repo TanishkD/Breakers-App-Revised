@@ -15,74 +15,39 @@
 
 </head>
 <body>
-    <form id="Training" runat="server">
-		<!--
-        <div>
-
-
-            	<div class="row">
-		<div class="col-md-12">
-			<ul class="nav nav-pills">
-				<li class="nav-item">
-					<a class="nav-link" href="Home.aspx">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="Player Information.aspx">Player Information</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active" href="#">Training</a>
-				</li>
-				<li class="nav-item dropdown ml-md-auto">
-					 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">Accounts</a>
-					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-						 <a class="dropdown-item" href="Login.aspx">Login</a> <a class="dropdown-item" href="Register.aspx">Create Account</a> <a class="dropdown-item" href="#">Something else here</a>
-						<div class="dropdown-divider">
-						</div> <a class="dropdown-item" href="#">Separated link</a>
-					</div>
-				</li>
-			</ul>
-			
-		</div>
-	</div>
-
-			<div style="width: 1412px">
-
-
-
-
-
-			</div>
-
-
-        </div>
-			-->
-            
-       
-        
-            
-       
-        <table style="width: 100%; margin-left: auto; margin-right: auto;" border="1";  >
-            <tr>
-                <td>&sdf;</td>
-                <td>&sdf;</td>
-                <td>&sdf;</td>
-            </tr>
-            <tr>
-                <td>&sdf;</td>
-                <td>&sdf;</td>
-                <td>&sdf;</td>
-            </tr>
-            <tr>
-                <td>&sdf;</td>
-                <td>&sdf;</td>
-                <td>&sdf;</td>
-            </tr>
-        </table>
-            
-       
-        
-            
-       
+    <form id="form1" runat="server">
+        <asp:Panel ID="Panel1" runat="server" HorizontalAlign="Center">
+            <table style="width: 100%;" border="1">
+<tbody>
+<tr>
+<td>fillertextfillertext</td>
+<td>Select Difficulty Level</td>
+<td>You are logged in as:<br /> Your difficulty is set to:</td>
+</tr>
+<tr>
+<td>fillertextfillertext</td>
+<td>Easy Difficulty: Enter description here<br />
+    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click1" Text="Button" />
+    </td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>fillertextfillertext</td>
+<td>Medium Difficulty: Enter description here<br />
+    <asp:Button ID="Button2" runat="server" Text="Button" />
+    </td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>fillertextfillertext</td>
+<td>Hard Difficulty: Enter description here<br />
+    <asp:Button ID="Button3" runat="server" Text="Button" />
+    </td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+        </asp:Panel>
     </form>
 </body>
 </html>
