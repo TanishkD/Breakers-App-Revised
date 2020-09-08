@@ -52,8 +52,8 @@ namespace Breakers_App_Revised
                     sqlCmd.Parameters.AddWithValue("@Username", InputUsername.Text.Trim());
                     sqlCmd.Parameters.AddWithValue("@Password", InputPassword.Text.Trim());
                     sqlCmd.ExecuteNonQuery();
-                    lblMsg.Text = "You're in";
                     Clear();
+                    Response.Redirect("~/Home.aspx");
 
                 }
 

@@ -16,6 +16,7 @@
 </head>
 <body>
     <form id="Training" runat="server">
+		<!--
         <div>
 
 
@@ -44,7 +45,9 @@
 		</div>
 	</div>
 
-			<div>
+			<div style="width: 1412px">
+
+
 
 
 
@@ -52,6 +55,34 @@
 
 
         </div>
+			-->
+            
+       
+        
+            
+       
+        <table style="width: 100%; margin-left: auto; margin-right: auto;" border="1";  >
+            <tr>
+                <td>&sdf;</td>
+                <td>&sdf;</td>
+                <td>&sdf;</td>
+            </tr>
+            <tr>
+                <td>&sdf;</td>
+                <td>&sdf;</td>
+                <td>&sdf;</td>
+            </tr>
+            <tr>
+                <td>&sdf;</td>
+                <td>&sdf;</td>
+                <td>&sdf;</td>
+            </tr>
+        </table>
+            
+       
+        
+            
+       
     </form>
 </body>
 </html>
