@@ -18,35 +18,40 @@
     <form id="form1" runat="server">
         <asp:Panel ID="Panel1" runat="server" HorizontalAlign="Center">
             <table style="width: 100%;" border="1">
-<tbody>
-<tr>
-<td>fillertextfillertext</td>
-<td>Select Difficulty Level</td>
-<td>You are logged in as:<br /> Your difficulty is set to:</td>
-</tr>
-<tr>
-<td>fillertextfillertext</td>
-<td>Easy Difficulty: Enter description here<br />
-    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click1" Text="Button" />
-    </td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>fillertextfillertext</td>
-<td>Medium Difficulty: Enter description here<br />
-    <asp:Button ID="Button2" runat="server" Text="Button" />
-    </td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td>fillertextfillertext</td>
-<td>Hard Difficulty: Enter description here<br />
-    <asp:Button ID="Button3" runat="server" Text="Button" />
-    </td>
-<td>&nbsp;</td>
-</tr>
-</tbody>
-</table>
+            <tbody>
+            <tr>
+            <td>fillertextfillertext</td>
+            <td>Select Difficulty Level</td>
+            <td>You are logged in as:
+                <asp:Label ID="usernameLoggedIn" runat="server"></asp:Label>
+                <br />
+                Your difficulty is set to:
+                <asp:Label ID="difficultyLoggedIn" runat="server"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+            <td>fillertextfillertext</td>
+            <td>Easy Difficulty: Enter description here<br />
+                <asp:Button ID="btnBeginner" runat="server" OnClick="btnBeginner_Click" Text="Set Beginner" />
+                </td>
+            <td>fillertextfillertext</td>
+            </tr>
+            <tr>
+            <td>fillertextfillertext</td>
+            <td>Medium Difficulty: Enter description here<br />
+                <asp:Button ID="btnMedium" runat="server" Text="Set Medium" OnClick="btnMedium_Click1" />
+                </td>
+            <td>fillertextfillertext</td>
+            </tr>
+            <tr>
+            <td>fillertextfillertext</td>
+            <td>Hard Difficulty: Enter description here<br />
+                <asp:Button ID="btnHard" runat="server" Text="Set Hard" OnClick="Button3_Click" />
+                </td>
+            <td>fillertextfillertext</td>
+            </tr>
+            </tbody>
+            </table>
         </asp:Panel>
     </form>
 </body>

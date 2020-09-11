@@ -24,9 +24,19 @@ namespace Breakers_App_Revised
 
         }
 
-        protected void Button1_Click1(object sender, EventArgs e)
+        protected void btnBeginner_Click(object sender, EventArgs e)
         {
+            Response.Redirect("~/Difficulty Pages/BEGINNER_DIFFICULTY.aspx");
+        }
 
+        protected void btnMedium_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Difficulty Pages/MEDIUM_DIFFICULTY.aspx");
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Difficulty Pages/HARD_DIFFICULTY.aspx");
         }
     }
 }

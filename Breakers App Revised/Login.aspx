@@ -61,7 +61,7 @@
 			
 	        <asp:Label ID="Username" runat="server" Text="Username"></asp:Label>
             <br />
-            <asp:TextBox ID="InputUsername" runat="server"  ></asp:TextBox>
+            <asp:TextBox ID="InputUsername" runat="server" OnTextChanged="InputUsername_TextChanged"  ></asp:TextBox>
             <br />
             <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
             <br />
@@ -113,4 +113,3 @@
   </div>
 </body>
 </html>
-

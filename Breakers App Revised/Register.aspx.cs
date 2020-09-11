@@ -53,7 +53,7 @@ namespace Breakers_App_Revised
                     sqlCmd.Parameters.AddWithValue("@Password", InputPassword.Text.Trim());
                     sqlCmd.ExecuteNonQuery();
                     Clear();
-                    Response.Redirect("~/Home.aspx");
+                    Response.Redirect("~/Login.aspx");
 
                 }
 

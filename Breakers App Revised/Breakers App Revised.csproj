@@ -106,6 +106,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Difficulty Pages\BEGINNER_DIFFICULTY.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -118,6 +119,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Content\PlayerInfo.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Difficulty Pages\HARD_DIFFICULTY.aspx" />
+    <Content Include="Difficulty Pages\MEDIUM_DIFFICULTY.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -227,6 +230,13 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Difficulty Pages\BEGINNER_DIFFICULTY.aspx.cs">
+      <DependentUpon>BEGINNER_DIFFICULTY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Difficulty Pages\BEGINNER_DIFFICULTY.aspx.designer.cs">
+      <DependentUpon>BEGINNER_DIFFICULTY.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -240,6 +250,20 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Difficulty Pages\HARD_DIFFICULTY.aspx.cs">
+      <DependentUpon>HARD_DIFFICULTY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Difficulty Pages\HARD_DIFFICULTY.aspx.designer.cs">
+      <DependentUpon>HARD_DIFFICULTY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Difficulty Pages\MEDIUM_DIFFICULTY.aspx.cs">
+      <DependentUpon>MEDIUM_DIFFICULTY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Difficulty Pages\MEDIUM_DIFFICULTY.aspx.designer.cs">
+      <DependentUpon>MEDIUM_DIFFICULTY.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

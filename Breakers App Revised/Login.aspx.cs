@@ -42,6 +42,13 @@ namespace Breakers_App_Revised
 
             }
 
+
+
+        }
+
+        protected void InputUsername_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
