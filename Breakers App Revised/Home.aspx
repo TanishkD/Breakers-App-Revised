@@ -9,6 +9,7 @@
     <script src="/Scripts/jquery-3.4.1.min.js"></script>
     <script src="/Scripts/bootstrap.min.js"></script>
     <script src="/Scripts/scripts.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link href="Content/bootstrap.min.css" rel="stylesheet"/>
     <link href="Content/Site.css" rel="stylesheet"/>
@@ -25,23 +26,29 @@
 		<div class="col-md-12">
 			<ul class="nav nav-pills">
 				<li class="nav-item">
-					<a class="nav-link active" href="Home.aspx">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="Player Information.aspx">Player Information</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link " href="Training.aspx">Training</a>
-				</li>
+					<a class="nav-link active" href="Home.aspx"><asp:Button ID="btnHome" runat="server" Text="Home" OnClick="Button3_Click" />
+                    </a>
+				&nbsp;</li>
 
-				
+				<li class="nav-item">
+					<a class="nav-link" href="Player Information.aspx">
+                    <asp:Button ID="btnPlayerInformation" runat="server" Text="Player Information" OnClick="btnPlayerInformation_Click" Width="139px" />
+                    </a>&nbsp;</li>
+
+				<li class="nav-item">
+					<a class="nav-link " href="Training.aspx"><asp:Button ID="btnTraining" runat="server" OnClick="Button1_Click" Text="Training" />
+                    </a>
+
+                    <asp:Label ID="lblLogin" runat="server" Text="Log into an account first" Visible="False"></asp:Label>
+                    &nbsp;</li>
 
 				<li class="nav-item dropdown ml-md-auto">
-					 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">Accounts</a>
-					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-						 <a class="dropdown-item" href="Login.aspx">Login</a> <a class="dropdown-item" href="Register.aspx">Create Account</a> <!-- <a class="dropdown-item" href="Modify.aspx">Modify User Account</a> -->
+					 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"><asp:Button ID="btnAccounts" runat="server" Text="Accounts" OnClick="btnAccounts_Click" />
+                     </a>
+					&nbsp;<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+						 <a class="dropdown-item" href="Login.aspx"></a><asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnAccounts_Click" /> <a class="dropdown-item" href="Register.aspx"></a><asp:Button ID="btnCreateAccount" runat="server" Text="Create Account" OnClick="btnAccounts_Click" /> <!-- <a class="dropdown-item" href="Modify.aspx">Modify User Account</a> -->
 						<div class="dropdown-divider">
-						</div> <a class="dropdown-item" href="#">Separated link</a>
+						</div> <a class="dropdown-item" href="#"></a>
 					</div>
 				</li>
 			</ul>

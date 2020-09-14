@@ -9,6 +9,7 @@
     <script src="/Scripts/jquery-3.4.1.min.js"></script>
     <script src="/Scripts/bootstrap.min.js"></script>
     <script src="/Scripts/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link href="Content/bootstrap.min.css" rel="stylesheet"/>
     <link href="Content/Site.css" rel="stylesheet"/>
@@ -20,7 +21,7 @@
             <table style="width: 100%;" border="1">
             <tbody>
             <tr>
-            <td>fillertextfillertext</td>
+            <td>Search for training options from b/m/h</td>
             <td>Select Difficulty Level</td>
             <td>You are logged in as:
                 <asp:Label ID="usernameLoggedIn" runat="server"></asp:Label>

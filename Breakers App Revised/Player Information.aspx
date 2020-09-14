@@ -10,6 +10,7 @@
     <script src="/Scripts/jquery-3.4.1.min.js"></script>
     <script src="/Scripts/bootstrap.min.js"></script>
     <script src="/Scripts/scripts.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link href="Content/bootstrap.min.css" rel="stylesheet"/>
     <link href="Content/Site.css" rel="stylesheet"/>
