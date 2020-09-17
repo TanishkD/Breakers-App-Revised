@@ -54,7 +54,7 @@
 
 				<li class="nav-item">
 					
-                    <asp:Button ID="btnCreateAccount" runat="server" Text="Register" OnClick="btnCreateAccount_Click" />
+                    <asp:Button ID="btnCreateAccount" runat="server" Text="Register" OnClick="btnCreateAccount_Click" Visible="False" />
                     
                     &nbsp;
                     
@@ -74,7 +74,7 @@
             <td>Search for training options from b/m/h</td>
             <td>Select Difficulty Level</td>
             <td>You are logged in as:
-                <asp:Label ID="usernameLoggedIn" runat="server"></asp:Label>
+                <asp:Label ID="lblWelcomeUsername" runat="server" Visible="False"></asp:Label>
                 <br />
                 Your difficulty is set to:
                 <asp:Label ID="difficultyLoggedIn" runat="server"></asp:Label>

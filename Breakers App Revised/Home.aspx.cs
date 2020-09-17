@@ -20,7 +20,8 @@ namespace Breakers_App_Revised
 
                 btnSignOut.Visible = true;
 
-
+                lblWelcomeUsername.Visible = true;
+                lblWelcomeUsername.Text = "Welcome " + (string)Session["Username"];
             }
 
         }

@@ -26,31 +26,51 @@
 		<div class="col-md-12">
 			<ul class="nav nav-pills">
 				<li class="nav-item">
-					<a class="nav-link " href="Home.aspx">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="Player Information.aspx">Player Information</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link " href="Training.aspx">Training</a>
-				</li>
-				<li class="nav-item">
-					<h4>
-                        <asp:Label ID="LoggedInAs" runat="server" Text=""></asp:Label>
-					</h4>
+					<asp:Button ID="btnHome" runat="server" Text="Home" OnClick="btnHome_Click" />
+                    
+				&nbsp;
+                    
 				</li>
 
-				<li class="nav-item dropdown ml-md-auto">
-					 <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">Accounts</a>
-					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-						 <a class="dropdown-item" href="Login.aspx">Login</a> <a class="dropdown-item" href="Register.aspx">Create Account</a> <a class="dropdown-item" href="#">Something else here</a>
-						<div class="dropdown-divider">
-						</div> <a class="dropdown-item" href="#">Separated link</a>
+				<li class="nav-item">
+					
+                    <asp:Button ID="btnPlayerInformation" runat="server" Text="Player Information" OnClick="btnPlayerInformation_Click" Width="145px" />
+                    &nbsp;
+                    </li>
+
+				<li class="nav-item">
+					
+					<asp:Button ID="btnTraining" runat="server" OnClick="btnTraining_Click" Text="Training" />
+                    
+
+                    &nbsp;
+                    
+
+                    <asp:Label ID="lblLogin" runat="server" Text="Log into an account first" Visible="False"></asp:Label>
+                    &nbsp;</li>
+
+				<li class="nav-item">
+					
+                    <asp:Button ID="btnSignIn" runat="server" Text="Login" OnClick="btnSignIn_Click" />
+                    
+                    &nbsp;
+                    
+                    </li>
+
+				<li class="nav-item">
+					
+                    <asp:Button ID="btnCreateAccount" runat="server" Text="Register" OnClick="btnCreateAccount_Click" />
+                    
+                    &nbsp;
+                    
+                    </li>
+				<li class="nav-item">
+					
+                    <asp:Button ID="btnSignOut" runat="server" Text="Log Out" Visible="False" OnClick="btnSignOut_Click" />
+                    
+                    </li>
+				
 					</div>
-				</li>
-			</ul>
-			
-		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-6">
@@ -62,11 +82,11 @@
 			
 	        <asp:Label ID="Username" runat="server" Text="Username"></asp:Label>
             <br />
-            <asp:TextBox ID="InputUsername" runat="server" OnTextChanged="InputUsername_TextChanged"  ></asp:TextBox>
+            <asp:TextBox ID="InputUsername" runat="server" OnTextChanged="InputUsername_TextChanged" onkeydown = "return (event.keyCode!=13)"  ></asp:TextBox>
             <br />
             <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
             <br />
-            <asp:TextBox ID="InputPassword" runat="server" ></asp:TextBox>
+            <asp:TextBox ID="InputPassword" runat="server" onkeydown = "return (event.keyCode!=13)"></asp:TextBox>
 			
 			
 			<br />

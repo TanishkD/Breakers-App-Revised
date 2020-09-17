@@ -96,13 +96,13 @@ namespace Breakers_App_Revised
         protected global::System.Web.UI.WebControls.Panel Panel1;
 
         /// <summary>
-        /// usernameLoggedIn control.
+        /// lblWelcomeUsername control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label usernameLoggedIn;
+        protected global::System.Web.UI.WebControls.Label lblWelcomeUsername;
 
         /// <summary>
         /// difficultyLoggedIn control.

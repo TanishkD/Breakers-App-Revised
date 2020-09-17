@@ -29,9 +29,11 @@ namespace Breakers_App_Revised
             {
                 Response.Redirect("~/Modify.aspx");
             }
+
             else if (dtbl.Rows.Count > 0)
             {
                 Session["CheckSignIn"] = "True";
+                Session["Username"] = InputUsername.Text;
                 Response.Redirect("~/Home.aspx");
                 
             }
@@ -51,6 +53,51 @@ namespace Breakers_App_Revised
         protected void InputUsername_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        protected void btnHome_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Home.aspx");
+
+        }
+
+        protected void btnPlayerInformation_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Player Information.aspx");
+
+        }
+
+        protected void btnTraining_Click(object sender, EventArgs e)
+        {
+            if ((string)Session["CheckSignIn"] == "True")
+            {
+
+                Response.Redirect("~/Training.aspx");
+            }
+            else
+            {
+
+                lblLogin.Visible = true;
+
+            }
+        }
+
+        protected void btnSignIn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Login.aspx");
+
+        }
+
+        protected void btnCreateAccount_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Register.aspx");
+
+        }
+
+        protected void btnSignOut_Click(object sender, EventArgs e)
+        {
+            Session["CheckSignIn"] = "false";
+            Response.Redirect("~/Home.aspx");
         }
     }
 }

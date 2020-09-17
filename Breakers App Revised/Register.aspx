@@ -81,13 +81,13 @@
 			
 			
 	        Username<br />
-            <asp:TextBox ID="InputUsername" runat="server" OnTextChanged="InputUsername_TextChanged"></asp:TextBox>
+            <asp:TextBox ID="InputUsername" runat="server" OnTextChanged="InputUsername_TextChanged" onkeydown = "return (event.keyCode!=13)"></asp:TextBox>
             <br />
             Password<br />
-            <asp:TextBox ID="InputPassword" runat="server"></asp:TextBox>
+            <asp:TextBox ID="InputPassword" runat="server" onkeydown = "return (event.keyCode!=13)"></asp:TextBox>
             <br />
             Confirm Password<br />
-            <asp:TextBox ID="InputPasswordConfirm" runat="server"></asp:TextBox>
+            <asp:TextBox ID="InputPasswordConfirm" runat="server" onkeydown = "return (event.keyCode!=13)"></asp:TextBox>
             <br />
             <br />
 			<asp:Button ID="ButtonSubmitReg" runat="server" OnClick="ButtonSubmit_Click" Text="Submit" Height="35px" />

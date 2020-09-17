@@ -69,6 +69,18 @@
                     <asp:Button ID="btnSignOut" runat="server" Text="Log Out" Visible="False" OnClick="btnSignOut_Click" />
                     
                     </li>
+                <li class="nav-item">
+					
+                    </li>
+                <li class="nav-item">
+					
+                    </li>
+                <li class="nav-item">
+					
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="lblWelcomeUsername" runat="server" Text="Welcome " Visible="False"></asp:Label>
+                    
+                    </li>
 				
 					</div>
 				
