@@ -26,32 +26,52 @@
 		<div class="col-md-12">
 			<ul class="nav nav-pills">
 				<li class="nav-item">
-					<a class="nav-link active" href="Home.aspx"><asp:Button ID="btnHome" runat="server" Text="Home" OnClick="Button3_Click" />
-                    </a>
-				&nbsp;</li>
+					<asp:Button ID="btnHome" runat="server" Text="Home" OnClick="btnHome_Click" />
+                    
+				&nbsp;
+                    
+				</li>
 
 				<li class="nav-item">
-					<a class="nav-link" href="Player Information.aspx">
-                    <asp:Button ID="btnPlayerInformation" runat="server" Text="Player Information" OnClick="btnPlayerInformation_Click" Width="139px" />
-                    </a>&nbsp;</li>
+					
+                    <asp:Button ID="btnPlayerInformation" runat="server" Text="Player Information" OnClick="btnPlayerInformation_Click" Width="145px" />
+                    &nbsp;
+                    </li>
 
 				<li class="nav-item">
-					<a class="nav-link " href="Training.aspx"><asp:Button ID="btnTraining" runat="server" OnClick="Button1_Click" Text="Training" />
-                    </a>
+					
+					<asp:Button ID="btnTraining" runat="server" OnClick="btnTraining_Click" Text="Training" />
+                    
+
+                    &nbsp;
+                    
 
                     <asp:Label ID="lblLogin" runat="server" Text="Log into an account first" Visible="False"></asp:Label>
                     &nbsp;</li>
 
-				<li class="nav-item dropdown ml-md-auto">
-					 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"><asp:Button ID="btnAccounts" runat="server" Text="Accounts" OnClick="btnAccounts_Click" />
-                     </a>
-					&nbsp;<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-						 <a class="dropdown-item" href="Login.aspx"></a><asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnAccounts_Click" /> <a class="dropdown-item" href="Register.aspx"></a><asp:Button ID="btnCreateAccount" runat="server" Text="Create Account" OnClick="btnAccounts_Click" /> <!-- <a class="dropdown-item" href="Modify.aspx">Modify User Account</a> -->
-						<div class="dropdown-divider">
-						</div> <a class="dropdown-item" href="#"></a>
+				<li class="nav-item">
+					
+                    <asp:Button ID="btnSignIn" runat="server" Text="Login" OnClick="btnSignIn_Click" />
+                    
+                    &nbsp;
+                    
+                    </li>
+
+				<li class="nav-item">
+					
+                    <asp:Button ID="btnCreateAccount" runat="server" Text="Register" OnClick="btnCreateAccount_Click" />
+                    
+                    &nbsp;
+                    
+                    </li>
+				<li class="nav-item">
+					
+                    <asp:Button ID="btnSignOut" runat="server" Text="Log Out" Visible="False" OnClick="btnSignOut_Click" />
+                    
+                    </li>
+				
 					</div>
-				</li>
-			</ul>
+				
 
 			<h3>
 				 

@@ -12,6 +12,61 @@ namespace Breakers_App_Revised
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            if ((string)Session["CheckSignIn"] == "True")
+            {
+
+                btnSignIn.Visible = false;
+                btnCreateAccount.Visible = false;
+
+                btnSignOut.Visible = true;
+
+
+            }
+
+        }
+
+        protected void btnHome_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Home.aspx");
+        }
+
+        protected void btnPlayerInformation_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Player Information.aspx");
+        }
+
+        protected void btnSignIn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Login.aspx");
+        }
+
+        protected void btnCreateAccount_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Register.aspx");
+        }
+
+        protected void btnSignOut_Click(object sender, EventArgs e)
+        {
+            Session["CheckSignIn"] = "false";
+            Response.Redirect("~/Home.aspx");
+
+        }
+
+        protected void btnTraining_Click(object sender, EventArgs e)
+        {
+
+            if ((string)Session["CheckSignIn"] == "True")
+            {
+
+                Response.Redirect("~/Training.aspx");
+            }
+            else
+            {
+
+                lblLogin.Visible = true;
+
+            }
+
         }
     }
 }

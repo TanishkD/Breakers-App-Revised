@@ -17,6 +17,56 @@
 </head>
 <body>
     <form id="form1" runat="server">
+
+        <div class="col-md-12">
+			<ul class="nav nav-pills">
+                <li class="nav-item">
+					<asp:Button ID="btnHome" runat="server" Text="Home" OnClick="btnHome_Click" />
+                    
+				&nbsp;
+                    
+				</li>
+
+				<li class="nav-item">
+					
+                    <asp:Button ID="btnPlayerInformation" runat="server" Text="Player Information" OnClick="btnPlayerInformation_Click" Width="145px" />
+                    &nbsp;
+                    </li>
+
+				<li class="nav-item">
+					
+					<asp:Button ID="btnTraining" runat="server" OnClick="btnTraining_Click" Text="Training" />
+                    
+
+                    &nbsp;
+                    
+
+                    <asp:Label ID="lblLogin" runat="server" Text="Log into an account first" Visible="False"></asp:Label>
+                    &nbsp;</li>
+
+				<li class="nav-item">
+					
+                    <asp:Button ID="btnSignIn" runat="server" Text="Login" OnClick="btnSignIn_Click" />
+                    
+                    &nbsp;
+                    
+                    </li>
+
+				<li class="nav-item">
+					
+                    <asp:Button ID="btnCreateAccount" runat="server" Text="Register" OnClick="btnCreateAccount_Click" />
+                    
+                    &nbsp;
+                    
+                    </li>
+				<li class="nav-item">
+					
+                    <asp:Button ID="btnSignOut" runat="server" Text="Log Out" Visible="False" OnClick="btnSignOut_Click" />
+                    
+                    </li>
+				
+					</div>
+
         <asp:Panel ID="Panel1" runat="server" HorizontalAlign="Center">
             <table style="width: 100%;" border="1">
             <tbody>
@@ -40,14 +90,14 @@
             <tr>
             <td>fillertextfillertext</td>
             <td>Medium Difficulty: Enter description here<br />
-                <asp:Button ID="btnMedium" runat="server" Text="Set Medium" OnClick="btnMedium_Click1" />
+                <asp:Button ID="btnMedium" runat="server" Text="Set Medium" OnClick="btnMedium_Click" />
                 </td>
             <td>fillertextfillertext</td>
             </tr>
             <tr>
             <td>fillertextfillertext</td>
             <td>Hard Difficulty: Enter description here<br />
-                <asp:Button ID="btnHard" runat="server" Text="Set Hard" OnClick="Button3_Click" />
+                <asp:Button ID="btnHard" runat="server" Text="Set Hard" OnClick="btnHard_Click" />
                 </td>
             <td>fillertextfillertext</td>
             </tr>

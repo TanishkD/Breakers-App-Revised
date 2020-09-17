@@ -11,17 +11,16 @@ namespace Breakers_App_Revised
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if ((string)Session["CheckSignIn"] == "True")
+            {
 
-        }
+                btnSignIn.Visible = false;
+                btnCreateAccount.Visible = false;
 
-        protected void Button2_Click(object sender, EventArgs e)
-        {
+                btnSignOut.Visible = true;
 
-        }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-
+            }
         }
 
         protected void btnBeginner_Click(object sender, EventArgs e)
@@ -29,14 +28,59 @@ namespace Breakers_App_Revised
             Response.Redirect("~/Difficulty Pages/BEGINNER_DIFFICULTY.aspx");
         }
 
-        protected void btnMedium_Click1(object sender, EventArgs e)
+        protected void btnMedium_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Difficulty Pages/MEDIUM_DIFFICULTY.aspx");
         }
 
-        protected void Button3_Click(object sender, EventArgs e)
+        protected void btnHard_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Difficulty Pages/HARD_DIFFICULTY.aspx");
+        }
+
+        protected void btnHome_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Home.aspx");
+
+        }
+
+        protected void btnPlayerInformation_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Player Information.aspx");
+
+        }
+
+        protected void btnTraining_Click(object sender, EventArgs e)
+        {
+            if ((string)Session["CheckSignIn"] == "True")
+            {
+
+                Response.Redirect("~/Training.aspx");
+            }
+            else
+            {
+
+                lblLogin.Visible = true;
+
+            }
+        }
+
+        protected void btnSignIn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Login.aspx");
+
+        }
+
+        protected void btnCreateAccount_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Register.aspx");
+
+        }
+
+        protected void btnSignOut_Click(object sender, EventArgs e)
+        {
+            Session["CheckSignIn"] = "false";
+            Response.Redirect("~/Home.aspx");
         }
     }
 }
