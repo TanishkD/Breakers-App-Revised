@@ -1,10 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Player Information.aspx.cs" Inherits="Breakers_App_Revised.Player_Information" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Settings.aspx.cs" Inherits="Breakers_App_Revised.Settings" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-
-    <head runat="server">
+<head runat="server">
     <title>Player Information Page</title>
 
     <script src="/Scripts/jquery-3.4.1.min.js"></script>
@@ -18,17 +17,10 @@
 
 
 </head>
-
 <body>
-	<div id="entire-page">
     <form id="form1" runat="server">
-
-
-
-        <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="col-md-12">
+        <div>
+            <div class="col-md-12">
 			<ul class="nav nav-pills">
                 <li class="nav-item">
                     
@@ -74,95 +66,19 @@
                     </li>
 				<li class="nav-item">
 					
-                    <asp:Button ID="btnSignOut" runat="server" Text="Log Out" Visible="False" OnClick="btnSignOut_Click" />
+                    <asp:Button ID="btnSignOut" runat="server" Text="Log Out" Visible="False" OnClick="btnSignOut_Click" style="height: 26px" />
                     
                     </li>
 				
 					</div>
-			<div>
+        </div>
 
-            <h1>fam our players are straight ass</h1>
-				<br />
+        <div>
+
+
 
         </div>
 
-	<div>
-
-		<div class="parent">
-		<div class="div1"> 
-
-		
-
-		<div class="div2"> 
-
-
-
-		</div>
-
-
-		<div class="div3"> 1
-
-		</div>
-		<div class="div4"> 1
-
-		</div>
-		<div class="div5"> 1
-
-		</div>
-
-		<div class="div6"> 2
-
-		</div>
-		<div class="div7"> 2
-
-		</div>
-		<div class="div8"> 2
-
-		</div>
-		<div class="div9"> 2
-
-		</div>
-
-		<div class="div10"> 3
-
-		</div>
-		<div class="div11"> 3
-
-		</div>
-		<div class="div12"> 3
-
-		</div>
-		<div class="div13"> 3
-
-		</div>
-
-		<div class="div14"> 4
-
-		</div>
-		<div class="div15"> 4
-
-		</div>
-		<div class="div16"> 4
-
-		</div>
-		<div class="div17"> 4
-
-		</div>
-		</div> 
-			</div>
-
-	</div>
-
-
-	
-</div>
-		</div>
-			</div>
-		
-		
-
-  
     </form>
-		</div>
 </body>
 </html>

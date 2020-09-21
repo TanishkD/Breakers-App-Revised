@@ -71,6 +71,8 @@
                     </li>
                 <li class="nav-item">
 					
+                    <asp:Button ID="btnSettings" runat="server" Text="Settings" OnClick="btnSettings_Click" Visible="False" />
+					
                     </li>
                 <li class="nav-item">
 					

@@ -12,7 +12,7 @@
             Beginner Difficulty
             <br />
             <br />
-            Insert</div>
+            </div>
     </form>
 </body>
 </html>

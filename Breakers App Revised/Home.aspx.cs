@@ -72,6 +72,12 @@ namespace Breakers_App_Revised
             Response.Redirect("~/Home.aspx");
 
         }
+
+        protected void btnSettings_Click(object sender, EventArgs e)
+        {
+            Session["CheckSignIn"] = "false";
+            
+        }
     }
 }
 
