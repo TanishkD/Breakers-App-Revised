@@ -77,6 +77,11 @@
                     <asp:Button ID="btnSignOut" runat="server" Text="Log Out" Visible="False" OnClick="btnSignOut_Click" />
                     
                     </li>
+                <li class="nav-item">
+					
+                    <asp:Button ID="btnSettings" runat="server" Text="Settings" OnClick="btnSettings_Click" Visible="False" />
+					
+                    </li>
 				
 					</div>
 			<div>

@@ -53,27 +53,23 @@
 					
                     <asp:Button ID="btnSignIn" runat="server" Text="Login" OnClick="btnSignIn_Click" />
                     
-                    &nbsp;
-                    
-                    </li>
+                    &nbsp;</li>
 
 				<li class="nav-item">
 					
                     <asp:Button ID="btnCreateAccount" runat="server" Text="Register" OnClick="btnCreateAccount_Click" />
                     
-                    &nbsp;
-                    
-                    </li>
+                    &nbsp;</li>
 				<li class="nav-item">
 					
                     <asp:Button ID="btnSignOut" runat="server" Text="Log Out" Visible="False" OnClick="btnSignOut_Click" />
                     
-                    </li>
+                    &nbsp;</li>
                 <li class="nav-item">
 					
                     <asp:Button ID="btnSettings" runat="server" Text="Settings" OnClick="btnSettings_Click" Visible="False" />
 					
-                    </li>
+                    &nbsp;</li>
                 <li class="nav-item">
 					
                     </li>

@@ -19,6 +19,7 @@ namespace Breakers_App_Revised
                 btnCreateAccount.Visible = false;
 
                 btnSignOut.Visible = true;
+                btnSettings.Visible = true;
 
                 lblWelcomeUsername.Visible = true;
                 lblWelcomeUsername.Text = "Welcome " + (string)Session["Username"];
@@ -75,7 +76,8 @@ namespace Breakers_App_Revised
 
         protected void btnSettings_Click(object sender, EventArgs e)
         {
-            Session["CheckSignIn"] = "false";
+
+            Response.Redirect("~/Settings.aspx");
             
         }
     }

@@ -34,6 +34,7 @@ namespace Breakers_App_Revised
             {
                 Session["CheckSignIn"] = "True";
                 Session["Username"] = InputUsername.Text;
+                Session["Password"] = InputPassword.Text;
                 Response.Redirect("~/Home.aspx");
                 
             }

@@ -74,8 +74,35 @@
         </div>
 
         <div>
+            <asp:TextBox ID="txtusername" runat="server" OnTextChanged="txtusername_TextChanged" AutoPostBack="true"></asp:TextBox>
+            <br />
+            <br />
+            <asp:TextBox ID="txtpassword" runat="server" OnTextChanged="txtpassword_TextChanged" AutoPostBack="true"></asp:TextBox>
+            <br />
+            <br />
+            <asp:TextBox ID="txtpasswordconfirm" runat="server" ></asp:TextBox>
+            
+            <br />
+            <asp:Label ID="UserIDnumber" runat="server" Text="" Visible="true"></asp:Label>
+            <br />
+            <br />
+            <asp:Label ID="Usernamelbl" runat="server"></asp:Label>
+            <br />
+            <br />
+            <asp:Label ID="Passlbl" runat="server" Text="" Visible="true"></asp:Label>
+            <br />
+            <br />
+            <asp:Button ID="Save" runat="server" OnClick="Save_Click" Text="Update profile" />
+            <br />
 
+ 
 
+            <asp:Label ID="lbluserbox" runat="server" Text="" Visible="false"></asp:Label>
+            <asp:Label ID="lblpassbox" runat="server" Text="" Visible="false"></asp:Label>
+            <asp:Label ID="lblerrormessage" runat="server" Text="" Visible="false"></asp:Label>
+            <asp:Label ID="lblsuccessmessage" runat="server" Text="" Visible="false"></asp:Label>
+
+ 
 
         </div>
 

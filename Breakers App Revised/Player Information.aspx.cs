@@ -68,5 +68,10 @@ namespace Breakers_App_Revised
             }
 
         }
+
+        protected void btnSettings_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
