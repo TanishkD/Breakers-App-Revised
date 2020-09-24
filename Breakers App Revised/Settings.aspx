@@ -16,6 +16,13 @@
 	<link href="Content/PlayerInfo.css" rel="stylesheet"/>
 
 
+    <style type="text/css">
+        .auto-style1 {
+            margin-left: 40px;
+        }
+    </style>
+
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -74,13 +81,19 @@
         </div>
 
         <div>
+            <p class="auto-style1">
+                Username<br />
             <asp:TextBox ID="txtusername" runat="server" OnTextChanged="txtusername_TextChanged" AutoPostBack="true"></asp:TextBox>
             <br />
-            <br />
+                <br />
+                Password<br />
             <asp:TextBox ID="txtpassword" runat="server" OnTextChanged="txtpassword_TextChanged" AutoPostBack="true"></asp:TextBox>
             <br />
             <br />
+                Confirm Password<br />
             <asp:TextBox ID="txtpasswordconfirm" runat="server" ></asp:TextBox>
+            
+                <br />
             
             <br />
             <asp:Label ID="UserIDnumber" runat="server" Text="" Visible="true"></asp:Label>
@@ -101,6 +114,10 @@
             <asp:Label ID="lblpassbox" runat="server" Text="" Visible="false"></asp:Label>
             <asp:Label ID="lblerrormessage" runat="server" Text="" Visible="false"></asp:Label>
             <asp:Label ID="lblsuccessmessage" runat="server" Text="" Visible="false"></asp:Label>
+
+ 
+
+            </p>
 
  
 

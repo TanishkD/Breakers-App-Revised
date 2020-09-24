@@ -43,8 +43,12 @@ namespace Breakers_App_Revised
                 }
             }
 
-            lbluserbox.Text = "Username:" + txtusername.Text;
+            lbluserbox.Text = txtusername.Text;
             lblpassbox.Text = txtpassword.Text;
+
+            UserIDnumber.Text = "UserID: " + UserIDnumber.Text;
+            Usernamelbl.Text = "Username: " + txtusername.Text;
+            Passlbl.Text = "Password: " + txtpassword.Text;
         }
 
         protected void btnHome_Click(object sender, EventArgs e)
