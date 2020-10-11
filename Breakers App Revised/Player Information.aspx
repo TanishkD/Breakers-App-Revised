@@ -11,11 +11,13 @@
     <script src="/Scripts/bootstrap.min.js"></script>
     <script src="/Scripts/scripts.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <link href="Content/bootstrap.min.css" rel="stylesheet"/>
     <link href="Content/Site.css" rel="stylesheet"/>
 	<link href="Content/PlayerInfo.css" rel="stylesheet"/>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
 
 </head>
 
@@ -91,72 +93,88 @@
 
         </div>
 
-	<div>
-
-		<div class="parent">
-		<div class="div1"> 
-
-		
-
-		<div class="div2"> 
-
-
-
-		</div>
+    <div class="carousel-container">
+      <h2>Carousel Example</h2>  
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
 
 
-		<div class="div3"> 1
+        </ol>
 
-		</div>
-		<div class="div4"> 1
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="Media/Carousel%20Images/CoreyWebster.png" alt="Player1" style="width:50%;"/>
+            <div class="carousel-caption">
+            <h3>Corey Webster</h3>
+            <p>Photo1</p>
+          </div>
+        </div>
 
-		</div>
-		<div class="div5"> 1
+          <div class="item">
+          <img src="Media/Carousel%20Images/FinnDelaney.png" alt="Player2" style="width:50%;"/>
+          <div class="carousel-caption">
+            <h3>Finn Delaney</h3>
+            <p>Photo2</p>
+          </div>
+         </div>
 
-		</div>
+      
+          <div class="item">
+            <img src="Media/Carousel%20Images/JordanNgatai.png" alt="Player3" style="width:50%;"/>
+            <div class="carousel-caption">
+            <h3>Jordan Ngatai</h3>
+            <p>Photo3</p>
+          </div>
+        </div>
 
-		<div class="div6"> 2
+      
+          <div class="item">
+            <img src="Media/Carousel%20Images/RobLoe.png" alt="Player4" style="width:50%;"/>
+            <div class="carousel-caption">
+            <h3>Rob Loe</h3>
+            <p>Photo4</p>
+          </div>
+        </div>
+   
+      
+          <div class="item">
+          <img src="Media/Carousel%20Images/TomAmbercombie.png" alt="Player5" style="width:50%;"/>
+          <div class="carousel-caption">
+            <h3>Tom Ambercombie</h3>
+            <p>Photo5</p>
+          </div>
+        </div>
 
-		</div>
-		<div class="div7"> 2
+          <div class="item">
+          <img src="Media/Carousel%20Images/TomVodanovic.png" alt="Player6" style="width:50%;"/>
+          <div class="carousel-caption">
+            <h3>Tom Vodanovic</h3>
+            <p>Photo6</p>
+          </div>
+        </div>
+      
 
-		</div>
-		<div class="div8"> 2
 
-		</div>
-		<div class="div9"> 2
+        </div>
 
-		</div>
-
-		<div class="div10"> 3
-
-		</div>
-		<div class="div11"> 3
-
-		</div>
-		<div class="div12"> 3
-
-		</div>
-		<div class="div13"> 3
-
-		</div>
-
-		<div class="div14"> 4
-
-		</div>
-		<div class="div15"> 4
-
-		</div>
-		<div class="div16"> 4
-
-		</div>
-		<div class="div17"> 4
-
-		</div>
-		</div> 
-			</div>
-
-	</div>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
 
 
 	

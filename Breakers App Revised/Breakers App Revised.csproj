@@ -141,6 +141,12 @@
     <Content Include="Media\court2.png" />
     <Content Include="Media\court3.png" />
     <Content Include="Media\Logonew.png" />
+    <Content Include="Media\Carousel Images\CoreyWebster.png" />
+    <Content Include="Media\Carousel Images\FinnDelaney.png" />
+    <Content Include="Media\Carousel Images\JordanNgatai.png" />
+    <Content Include="Media\Carousel Images\RobLoe.png" />
+    <Content Include="Media\Carousel Images\TomAmbercombie.png" />
+    <Content Include="Media\Carousel Images\TomVodanovic.png" />
     <Content Include="Media\Player Images\Thumbs.db" />
     <Content Include="..\.editorconfig">
       <Link>.editorconfig</Link>
