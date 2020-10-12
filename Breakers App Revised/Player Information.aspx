@@ -30,6 +30,21 @@
                 padding-left: 15px;
                 padding-right: 15px;
             }
+            .auto-style2 {
+                position: relative;
+                width: -2147483648%;
+                min-height: 1px;
+                top: -12px;
+                left: 4px;
+                -webkit-box-flex: 0;
+                -webkit-flex: 0 0 100%;
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+                float: left;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
         </style>
 
 </head>
@@ -42,7 +57,7 @@
         <div class="auto-style1">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="col-md-12">
+			<div class="auto-style2">
 			<ul class="nav nav-pills">
 				<li class="nav-item">
 					<asp:Button ID="btnHome" runat="server" Text="Home" OnClick="btnHome_Click" Height="28px" Width="62px" />
