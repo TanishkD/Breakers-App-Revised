@@ -137,6 +137,7 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-reboot.min.css.map" />
     <Content Include="Login.aspx" />
+    <Content Include="Media\Carousel Images\RobLoe123.png" />
     <Content Include="Media\Court.png" />
     <Content Include="Media\court2.png" />
     <Content Include="Media\court3.png" />
@@ -144,7 +145,6 @@
     <Content Include="Media\Carousel Images\CoreyWebster.png" />
     <Content Include="Media\Carousel Images\FinnDelaney.png" />
     <Content Include="Media\Carousel Images\JordanNgatai.png" />
-    <Content Include="Media\Carousel Images\RobLoe.png" />
     <Content Include="Media\Carousel Images\TomAmbercombie.png" />
     <Content Include="Media\Carousel Images\TomVodanovic.png" />
     <Content Include="Media\Player Images\Thumbs.db" />

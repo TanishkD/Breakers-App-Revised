@@ -19,24 +19,33 @@
 	<link href="Content/PlayerInfo.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
 
+        <style type="text/css">
+            .auto-style1 {
+                position: relative;
+                top: 0px;
+                left: 0px;
+                max-width: 1900px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        </style>
+
 </head>
 
 <body>
 	<div id="entire-page">
     <form id="form1" runat="server">
+        <br>
 
-
-
-        <div class="container-fluid">
+        <div class="auto-style1">
 	<div class="row">
 		<div class="col-md-12">
 			<div class="col-md-12">
 			<ul class="nav nav-pills">
-                <li class="nav-item">
-                    
-				</li>
-                <li class="nav-item">
-					<asp:Button ID="btnHome" runat="server" Text="Home" OnClick="btnHome_Click" />
+				<li class="nav-item">
+					<asp:Button ID="btnHome" runat="server" Text="Home" OnClick="btnHome_Click" Height="28px" Width="62px" />
                     
 				&nbsp;
                     
@@ -44,13 +53,13 @@
 
 				<li class="nav-item">
 					
-                    <asp:Button ID="btnPlayerInformation" runat="server" Text="Player Information" OnClick="btnPlayerInformation_Click" Width="145px" />
+                    <asp:Button ID="btnPlayerInformation" runat="server" Text="Player Information" OnClick="btnPlayerInformation_Click" Width="145px" Height="28px" />
                     &nbsp;
                     </li>
 
 				<li class="nav-item">
 					
-					<asp:Button ID="btnTraining" runat="server" OnClick="btnTraining_Click" Text="Training" />
+					<asp:Button ID="btnTraining" runat="server" OnClick="btnTraining_Click" Text="Training" Height="28px" />
                     
 
                     &nbsp;
@@ -61,40 +70,44 @@
 
 				<li class="nav-item">
 					
-                    <asp:Button ID="btnSignIn" runat="server" Text="Login" OnClick="btnSignIn_Click" />
+                    <asp:Button ID="btnSignIn" runat="server" Text="Login" OnClick="btnSignIn_Click" Height="28px" />
                     
-                    &nbsp;
-                    
-                    </li>
+                    &nbsp;</li>
 
 				<li class="nav-item">
 					
-                    <asp:Button ID="btnCreateAccount" runat="server" Text="Register" OnClick="btnCreateAccount_Click" />
+                    <asp:Button ID="btnCreateAccount" runat="server" Text="Register" OnClick="btnCreateAccount_Click" Height="28px" />
                     
-                    &nbsp;
-                    
-                    </li>
+                    &nbsp;</li>
 				<li class="nav-item">
 					
-                    <asp:Button ID="btnSignOut" runat="server" Text="Log Out" Visible="False" OnClick="btnSignOut_Click" />
+                    <asp:Button ID="btnSignOut" runat="server" Text="Log Out" Visible="False" OnClick="btnSignOut_Click" Height="28px" />
                     
+                    &nbsp;</li>
+                <li class="nav-item">
+					
+                    <asp:Button ID="btnSettings" runat="server" Text="Settings" OnClick="btnSettings_Click" Visible="False" Height="28px" />
+					
+                    &nbsp;</li>
+                <li class="nav-item">
+					
                     </li>
                 <li class="nav-item">
 					
-                    <asp:Button ID="btnSettings" runat="server" Text="Settings" OnClick="btnSettings_Click" Visible="False" />
-					
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="lblWelcomeUsername" runat="server" Text="Welcome " Visible="False"></asp:Label>
+                    
                     </li>
 				
 					</div>
 			<div>
 
-            <h1>fam our players are straight ass</h1>
-				<br />
+            
 
         </div>
 
     <div class="carousel-container">
-      <h2>Carousel Example</h2>  
+      <h2 style="text-align:center;">Players Overview</h2>  
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -109,54 +122,52 @@
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
+
           <div class="item active">
             <img src="Media/Carousel%20Images/CoreyWebster.png" alt="Player1" style="width:50%;"/>
             <div class="carousel-caption">
-            <h3>Corey Webster</h3>
-            <p>Photo1</p>
+            <h2 style="color:black">Corey Webster</h2>
+            <h4 style="color:black"> - 19.5PPG | 3.8REB | 4.2AST | 16.8EFF - <br /> -   188CM | 89KG - </h4>
           </div>
         </div>
 
           <div class="item">
           <img src="Media/Carousel%20Images/FinnDelaney.png" alt="Player2" style="width:50%;"/>
           <div class="carousel-caption">
-            <h3>Finn Delaney</h3>
-            <p>Photo2</p>
+            <h2 style="color:black">Finn Delaney</h2>
+            <h4 style="color:black; align-content:center;"> - 12.4PPG | 10.0REB | 2.2AST | 25.7EFF - <br /> - 200CM | 107KG - </h4>
           </div>
          </div>
-
       
           <div class="item">
             <img src="Media/Carousel%20Images/JordanNgatai.png" alt="Player3" style="width:50%;"/>
             <div class="carousel-caption">
-            <h3>Jordan Ngatai</h3>
-            <p>Photo3</p>
+            <h2 style="color:black">Jordan Ngatai</h2>
+            <h4 style="color:black"> - 18.2PPG | 5.7REB | 4.5AST | 17.8EFF - <br /> -  200CM | 98KG - </h4>
           </div>
         </div>
 
-      
           <div class="item">
-            <img src="Media/Carousel%20Images/RobLoe.png" alt="Player4" style="width:50%;"/>
+            <img src="Media/Carousel%20Images/RobLoe123.png" alt="Player4" style="width:44.5%;"/> 
             <div class="carousel-caption">
-            <h3>Rob Loe</h3>
-            <p>Photo4</p>
+            <h2 style="color:black">Rob Loe</h2>
+            <h4 style="color:black"> -  18.0PPG | 13.5REB | 3.5AST | 24.5EFF - <br /> - 211CM | 115KG - </h4>
           </div>
-        </div>
-   
+        </div>   
       
           <div class="item">
           <img src="Media/Carousel%20Images/TomAmbercombie.png" alt="Player5" style="width:50%;"/>
           <div class="carousel-caption">
-            <h3>Tom Ambercombie</h3>
-            <p>Photo5</p>
+            <h2 style="color:black">Tom Ambercombie</h2>
+            <h4 style="color:black"> - 12.1PPG | 4.4REB | 1.3AST | 13.7EFF - <br /> - 198CM | 90KG - </h4>
           </div>
         </div>
 
           <div class="item">
           <img src="Media/Carousel%20Images/TomVodanovic.png" alt="Player6" style="width:50%;"/>
           <div class="carousel-caption">
-            <h3>Tom Vodanovic</h3>
-            <p>Photo6</p>
+            <h2 style="color:black">Tom Vodanovich</h2>
+            <h4 style="color:black"> - 22.4PPG | 10.0REB | 2.2AST | 25.7EFF - <br /> - 201CM | 104KG - </h4>
           </div>
         </div>
       
