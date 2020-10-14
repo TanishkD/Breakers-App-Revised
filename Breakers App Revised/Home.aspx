@@ -26,7 +26,7 @@
 		<div class="col-md-12">
 			<ul class="nav nav-pills">
 				<li class="nav-item">
-					<asp:Button ID="btnHome" runat="server" Text="Home" OnClick="btnHome_Click" />
+					&nbsp;<asp:Button ID="btnHome" runat="server" Text="Home" OnClick="btnHome_Click" />
                     
 				&nbsp;
                     

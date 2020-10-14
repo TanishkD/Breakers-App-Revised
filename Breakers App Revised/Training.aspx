@@ -5,18 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Training</title>
-    h 
-    <script src="/Scripts/jquery-3.4.1.min.js"></script>
-    <script src="/Scripts/bootstrap.min.js"></script>
-    <script src="/Scripts/scripts.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <link href="Content/bootstrap.min.css" rel="stylesheet"/>
-    <link href="Content/Site.css" rel="stylesheet"/>
-
-</head>
-<body>
-    <form id="form1" runat="server">
+    &nbsp;<script src="/Scripts/jquery-3.4.1.min.js"></script><script src="/Scripts/bootstrap.min.js"></script><script src="/Scripts/scripts.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><link href="Content/bootstrap.min.css" rel="stylesheet"/><link href="Content/Site.css" rel="stylesheet"/></head><body><form id="form1" runat="server">
 
         <div class="col-md-12">
 			<ul class="nav nav-pills">

@@ -141,6 +141,7 @@
     <Content Include="Media\Court.png" />
     <Content Include="Media\court2.png" />
     <Content Include="Media\court3.png" />
+    <Content Include="Media\CourtDiagram.png" />
     <Content Include="Media\Logonew.png" />
     <Content Include="Media\Carousel Images\CoreyWebster.png" />
     <Content Include="Media\Carousel Images\FinnDelaney.png" />
