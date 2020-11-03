@@ -30,7 +30,7 @@
             <asp:Button ID="btnHandling" runat="server" Text="Handling" OnClick="btnHandling_Click" />&nbsp;
             <asp:Button ID="btnReset" runat="server" Text="Back To Start" OnClick="btnReset_Click" />&nbsp;
             
-            <div id="Sections">
+            <div class="Sections">
 
             <asp:Label ID="lblRules" runat="server" Text="">
                

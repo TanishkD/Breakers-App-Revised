@@ -45,10 +45,12 @@ namespace Breakers_App_Revised
 
             lbluserbox.Text = txtusername.Text;
             lblpassbox.Text = txtpassword.Text;
-
-            UserIDnumber.Text = "UserID: " + UserIDnumber.Text;
-            Usernamelbl.Text = "Username: " + txtusername.Text;
-            Passlbl.Text = "Password: " + txtpassword.Text;
+            //if (UserIDnumber.Text == "")
+            //{
+            //    UserIDnumber.Text = "UserID: " + UserIDnumber.Text;
+            //    Usernamelbl.Text = "Username: " + txtusername.Text;
+            //    Passlbl.Text = "Password: " + txtpassword.Text;
+            //}
         }
 
         protected void btnHome_Click(object sender, EventArgs e)
@@ -119,7 +121,7 @@ namespace Breakers_App_Revised
                     sqlcon.Open();
                     SqlCommand sqlCmd = new SqlCommand("UserCreateOrUpdate", sqlcon);
                     sqlCmd.CommandType = CommandType.StoredProcedure;
-                    sqlCmd.Parameters.AddWithValue("@UserID", UserIDnumber.Text.Trim());
+                    sqlCmd.Parameters.AddWithValue("@UserID", Convert.ToInt32(UserIDnumber.Text.Trim()));
                     sqlCmd.Parameters.AddWithValue("@Username", lbluserbox.Text.Trim());
                     sqlCmd.Parameters.AddWithValue("@Password", lblpassbox.Text.Trim());
                     sqlCmd.ExecuteNonQuery();
@@ -131,4 +133,3 @@ namespace Breakers_App_Revised
         }
     }
 }
- 

@@ -36,7 +36,10 @@ namespace Breakers_App_Revised
                 lblMsg.Text = "Passwords do not match";
             }
 
-
+            else if (InputUsername.Text.Length < 5)
+            {
+                lblCharLength.Visible = true;
+            }
 
             else
             {

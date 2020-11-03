@@ -99,10 +99,10 @@
             <asp:Label ID="UserIDnumber" runat="server" Text="" Visible="true"></asp:Label>
             <br />
             <br />
-            <asp:Label ID="Usernamelbl" runat="server"></asp:Label>
+            <asp:Label ID="Usernamelbl" runat="server" Visible="False"></asp:Label>
             <br />
             <br />
-            <asp:Label ID="Passlbl" runat="server" Text="" Visible="true"></asp:Label>
+            <asp:Label ID="Passlbl" runat="server" Visible="False"></asp:Label>
             <br />
             <br />
             <asp:Button ID="Save" runat="server" OnClick="Save_Click" Text="Update profile" />

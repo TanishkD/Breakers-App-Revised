@@ -58,15 +58,11 @@
 
 				<li class="nav-item">
 					
-                    <asp:Button ID="btnCreateAccount" runat="server" Text="Register" OnClick="btnCreateAccount_Click" />
-                    
                     &nbsp;
                     
                     </li>
 				<li class="nav-item">
 					
-                    <asp:Button ID="btnSignOut" runat="server" Text="Log Out" Visible="False" OnClick="btnSignOut_Click" />
-                    
                     </li>
                 <li class="nav-item">
 					
@@ -92,7 +88,7 @@
 		 <div class="row">
 			<div class="col-md-6">
 			<h2>
-	            Modify User Information - Administrator<br />
+	            Modify User Information - Administrator<br /> <!--User modify page, for admin use/registered user use-->
 			</h2>
                  <div>
             <asp:HiddenField ID="hfUserID" runat="server" />

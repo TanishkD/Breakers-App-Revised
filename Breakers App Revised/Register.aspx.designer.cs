@@ -96,6 +96,15 @@ namespace Breakers_App_Revised
         protected global::System.Web.UI.WebControls.TextBox InputUsername;
 
         /// <summary>
+        /// lblCharLength control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCharLength;
+
+        /// <summary>
         /// InputPassword control.
         /// </summary>
         /// <remarks>

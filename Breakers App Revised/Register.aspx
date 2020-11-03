@@ -82,12 +82,13 @@
 			
 	        Username<br />
             <asp:TextBox ID="InputUsername" runat="server" OnTextChanged="InputUsername_TextChanged" onkeydown = "return (event.keyCode!=13)"></asp:TextBox>
+            <asp:Label ID="lblCharLength" runat="server" Text="Enter more than 5 characters" Visible="False"></asp:Label>
             <br />
             Password<br />
-            <asp:TextBox ID="InputPassword" runat="server" onkeydown = "return (event.keyCode!=13)"></asp:TextBox>
+            <asp:TextBox ID="InputPassword" runat="server" onkeydown = "return (event.keyCode!=13)" TextMode="Password"></asp:TextBox>
             <br />
             Confirm Password<br />
-            <asp:TextBox ID="InputPasswordConfirm" runat="server" onkeydown = "return (event.keyCode!=13)"></asp:TextBox>
+            <asp:TextBox ID="InputPasswordConfirm" runat="server" onkeydown = "return (event.keyCode!=13)" TextMode="Password"></asp:TextBox>
             <br />
             <br />
 			<asp:Button ID="ButtonSubmitReg" runat="server" OnClick="ButtonSubmit_Click" Text="Submit" Height="35px" />
